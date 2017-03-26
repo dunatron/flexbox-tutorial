@@ -6,17 +6,22 @@ body {
     margin: 0;
     padding: 0;
 }
+div {
+    box-sizing: border-box;
+}
 
 .box {
     color:white;
     font-size: 20px;
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+    padding: 10px;
 }
 
 .box1 {
     background: #1abc9c;
     order: 3;
+
 }
 .box2 {
     background: #3498db;
@@ -30,18 +35,19 @@ body {
 .box5 {
     background: #f1c40f;
     order: 1;
+
 }
 .box6 {
     background: #e67e22;
-    order: 2;
+
 }
 .box7 {
     background: #e74c3c;
-    order: 2;
+
 }
 .box8 {
     background: #bdc3c7;
-    order: 1;
+
 }
 .box9 {
     background: #2ecc71;
@@ -50,15 +56,231 @@ body {
     background: #16a085;
 }
 
-.box {
-    flex:1;
-}
-
-
 .container {
     display: flex;
     justify-content: center;
     border: 10px solid goldenrod;
     flex-direction: column;
     min-height: 100vh;
+    box-sizing: border-box;
+    /*min-height: calc(100vh - 20px);*/
+}
+
+
+/* Tutorial 2*/
+.container2 {
+    display: flex;
+    border: 10px solid firebrick;
+    box-sizing: border-box;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.box-tut2 {
+    color:white;
+    font-size: 60px;
+    width: 33.33333%;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+}
+
+.tut2-box1 {
+    background: #3498db;
+}
+.tut2-box2 {
+    background: #9b59b6;
+}
+.tut2-box3 {
+    background: #34495e;
+}
+.tut2-box4 {
+    background: #f1c40f;
+
+}
+.tut2-box5 {
+    background: #e67e22;
+
+}
+.tut2-box6 {
+    background: #e74c3c;
+
+}
+.tut2-box7 {
+    background: #bdc3c7;
+
+}
+.tut2-box8 {
+    background: #2ecc71;
+}
+.tut2-box9 {
+    background: #1abc9c;
+
+}
+.tut2-box10 {
+    background: #16a085;
+}
+
+/* Tutorial 3*/
+.container3 {
+    display: flex;
+    border: 10px solid mistyrose;
+    height: 100vh;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.box-tut3 {
+    color:white;
+    font-size: 60px;
+    width: 33.33333%;
+}
+
+.tut3-box1 {
+    background: #3498db;
+}
+.tut3-box2 {
+    background: #9b59b6;
+}
+.tut3-box3 {
+    background: #34495e;
+    padding-bottom: 200px;
+    align-self: flex-end;
+}
+.tut3-box4 {
+    background: #f1c40f;
+
+}
+.tut3-box5 {
+    background: #e67e22;
+    padding-bottom: 0;
+
+}
+.tut3-box6 {
+    background: #e74c3c;
+    padding-bottom: 80px;
+    align-self: flex-end;
+
+}
+.tut3-box7 {
+    background: #bdc3c7;
+    align-self: center;
+
+}
+.tut3-box8 {
+    background: #2ecc71;
+}
+.tut3-box9 {
+    background: #1abc9c;
+    padding-bottom: 40px;
+    align-self: stretch;
+
+}
+.tut3-box10 {
+    background: #16a085;
+}
+
+/* Tutorial 4*/
+.container4 {
+    display: flex;
+    border: 10px solid royalblue;
+}
+.box-tut4 {
+    color:white;
+    font-size: 40px;
+    flex: 1;
+}
+
+.tut4-box1 {
+    background: #3498db;
+}
+.tut4-box2 {
+    background: #9b59b6;
+}
+.tut4-box3 {
+    background: #34495e;
+    flex: 2;
+}
+.tut4-box4 {
+    background: #f1c40f;
+
+}
+.tut4-box5 {
+    background: #e67e22;
+    flex: 1.5;
+}
+.tut4-box6 {
+    background: #e74c3c;
+}
+.tut4-box7 {
+    background: #bdc3c7;
+}
+.tut4-box8 {
+    background: #2ecc71;
+}
+.tut4-box9 {
+    background: #1abc9c;
+    flex: 3;
+}
+.tut4-box10 {
+    background: #16a085;
+}
+
+/* Tutorial 5*/
+.container5 {
+    display: flex;
+    border: 10px solid mediumvioletred;
+}
+.box-tut5 {
+    color:white;
+    font-size: 18px;
+}
+
+.tut5-box1 {
+    background: #3498db;
+    flex-basis: 400px;
+    flex-grow: 2;
+}
+.tut5-box2 {
+    background: #9b59b6;
+    /*flex-grow: 1;*/
+    /*flex-basis: 400px;*/
+    /*flex-shrink: 10;*/
+    /* Shorthand below (grow, shrink, basis)*/
+    flex:1 10 400px;
+}
+
+/* Tutorial 6*/
+.container6 {
+    border: 10px solid yellow;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+}
+.box-tut6 {
+    color:white;
+    font-size: 20px;
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.tut6-box1 {
+    background: #3498db;
+}
+.tut6-box2 {
+    background: #9b59b6;
+}
+.tut6-box3 {
+    background: #34495e;
+    flex-grow: 5;
+}
+.tut6-box4 {
+    background: #f1c40f;
+    flex-basis: 100px;
+}
+.tut6-box5 {
+    background: #e67e22;
+}
+.tut6-box6 {
+    background: #e74c3c;
 }

@@ -1,0 +1,345 @@
+/*
+Tutorial 1 Introduction to flexbox
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+div {
+    box-sizing: border-box;
+}
+
+.box {
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+.box1 {
+    background: #1abc9c;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+
+}
+.box2 {
+    background: #3498db;
+}
+.box3 {
+    background: #9b59b6;
+}
+.box4 {
+    background: #34495e;
+}
+.box5 {
+    background: #f1c40f;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+
+}
+.box6 {
+    background: #e67e22;
+
+}
+.box7 {
+    background: #e74c3c;
+
+}
+.box8 {
+    background: #bdc3c7;
+
+}
+.box9 {
+    background: #2ecc71;
+}
+.box10 {
+    background: #16a085;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 10px solid goldenrod;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    /*min-height: calc(100vh - 20px);*/
+}
+
+
+/* Tutorial 2*/
+.container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 10px solid firebrick;
+    box-sizing: border-box;
+    height: 100vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.box-tut2 {
+    color:white;
+    font-size: 60px;
+    width: 33.33333%;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+}
+
+.tut2-box1 {
+    background: #3498db;
+}
+.tut2-box2 {
+    background: #9b59b6;
+}
+.tut2-box3 {
+    background: #34495e;
+}
+.tut2-box4 {
+    background: #f1c40f;
+
+}
+.tut2-box5 {
+    background: #e67e22;
+
+}
+.tut2-box6 {
+    background: #e74c3c;
+
+}
+.tut2-box7 {
+    background: #bdc3c7;
+
+}
+.tut2-box8 {
+    background: #2ecc71;
+}
+.tut2-box9 {
+    background: #1abc9c;
+
+}
+.tut2-box10 {
+    background: #16a085;
+}
+
+/* Tutorial 3*/
+.container3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 10px solid mistyrose;
+    height: 100vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+.box-tut3 {
+    color:white;
+    font-size: 60px;
+    width: 33.33333%;
+}
+
+.tut3-box1 {
+    background: #3498db;
+}
+.tut3-box2 {
+    background: #9b59b6;
+}
+.tut3-box3 {
+    background: #34495e;
+    padding-bottom: 200px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+}
+.tut3-box4 {
+    background: #f1c40f;
+
+}
+.tut3-box5 {
+    background: #e67e22;
+    padding-bottom: 0;
+
+}
+.tut3-box6 {
+    background: #e74c3c;
+    padding-bottom: 80px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+
+}
+.tut3-box7 {
+    background: #bdc3c7;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+
+}
+.tut3-box8 {
+    background: #2ecc71;
+}
+.tut3-box9 {
+    background: #1abc9c;
+    padding-bottom: 40px;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+
+}
+.tut3-box10 {
+    background: #16a085;
+}
+
+/* Tutorial 4*/
+.container4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 10px solid royalblue;
+}
+.box-tut4 {
+    color:white;
+    font-size: 40px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.tut4-box1 {
+    background: #3498db;
+}
+.tut4-box2 {
+    background: #9b59b6;
+}
+.tut4-box3 {
+    background: #34495e;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+}
+.tut4-box4 {
+    background: #f1c40f;
+
+}
+.tut4-box5 {
+    background: #e67e22;
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+}
+.tut4-box6 {
+    background: #e74c3c;
+}
+.tut4-box7 {
+    background: #bdc3c7;
+}
+.tut4-box8 {
+    background: #2ecc71;
+}
+.tut4-box9 {
+    background: #1abc9c;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+}
+.tut4-box10 {
+    background: #16a085;
+}
+
+/* Tutorial 5*/
+.container5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 10px solid mediumvioletred;
+}
+.box-tut5 {
+    color:white;
+    font-size: 18px;
+}
+
+.tut5-box1 {
+    background: #3498db;
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+}
+.tut5-box2 {
+    background: #9b59b6;
+    /*flex-grow: 1;*/
+    /*flex-basis: 400px;*/
+    /*flex-shrink: 10;*/
+    /* Shorthand below (grow, shrink, basis)*/
+    -webkit-box-flex:1;
+        -ms-flex:1 10 400px;
+            flex:1 10 400px;
+}
+
+/* Tutorial 6*/
+.container6 {
+    border: 10px solid yellow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+}
+.box-tut6 {
+    color:white;
+    font-size: 20px;
+    -ms-flex-preferred-size: 250px;
+        flex-basis: 250px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.tut6-box1 {
+    background: #3498db;
+}
+.tut6-box2 {
+    background: #9b59b6;
+}
+.tut6-box3 {
+    background: #34495e;
+    -webkit-box-flex: 5;
+        -ms-flex-positive: 5;
+            flex-grow: 5;
+}
+.tut6-box4 {
+    background: #f1c40f;
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+}
+.tut6-box5 {
+    background: #e67e22;
+}
+.tut6-box6 {
+    background: #e74c3c;
+}

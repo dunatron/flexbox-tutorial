@@ -37,7 +37,7 @@ class Page_Controller extends ContentController {
 
         // Add all our css files to combine into an array
         $CSSFiles = array(
-            $themeFolder . '/css/main.css'
+            $themeFolder . '/build/main.css'
         );
 
         // Add all our files to combine into an array
